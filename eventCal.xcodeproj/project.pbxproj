@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1668DA622C28486003E0C95 /* CalPlan.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F1668DA522C28486003E0C95 /* CalPlan.rtf */; };
+		F1668DAC22C285AB003E0C95 /* CalInfo.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F1668DAB22C285AB003E0C95 /* CalInfo.stringsdict */; };
+		F1668DB122C2A9A9003E0C95 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F1668DAF22C2A9A9003E0C95 /* Localizable.stringsdict */; };
 		F16AB87622B6851200322F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16AB87522B6851200322F18 /* AppDelegate.swift */; };
 		F16AB87822B6851200322F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16AB87722B6851200322F18 /* ViewController.swift */; };
 		F16AB87B22B6851200322F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16AB87922B6851200322F18 /* Main.storyboard */; };
 		F16AB87E22B6851200322F18 /* eventCal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F16AB87C22B6851200322F18 /* eventCal.xcdatamodeld */; };
 		F16AB88022B6851400322F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16AB87F22B6851400322F18 /* Assets.xcassets */; };
 		F16AB88322B6851400322F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16AB88122B6851400322F18 /* LaunchScreen.storyboard */; };
+		F1B241EB22C4021800F1CC74 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1B241E922C4021800F1CC74 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F161990122C3F49C00BF641B /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Main.strings"; sourceTree = "<group>"; };
+		F161990222C3F49C00BF641B /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		F1668DA522C28486003E0C95 /* CalPlan.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = CalPlan.rtf; sourceTree = "<group>"; };
+		F1668DAB22C285AB003E0C95 /* CalInfo.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = CalInfo.stringsdict; path = Data/CalInfo.stringsdict; sourceTree = "<group>"; };
+		F1668DAD22C2A661003E0C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F1668DAE22C2A661003E0C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F1668DB022C2A9A9003E0C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = eventCal/en.lproj/Localizable.stringsdict; sourceTree = SOURCE_ROOT; };
 		F16AB87222B6851200322F18 /* eventCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16AB87522B6851200322F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F16AB87722B6851200322F18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +35,9 @@
 		F16AB87F22B6851400322F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F16AB88222B6851400322F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F16AB88422B6851400322F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B241EA22C4021800F1CC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = eventCal/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F1B241EC22C4022900F1CC74 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "eventCal/fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F1B241ED22C4022B00F1CC74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = eventCal/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +51,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1668DA722C284F1003E0C95 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F1668DA522C28486003E0C95 /* CalPlan.rtf */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F1668DA822C284FC003E0C95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1668DA922C28507003E0C95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F16AB87922B6851200322F18 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1668DAA22C2850D003E0C95 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F16AB87722B6851200322F18 /* ViewController.swift */,
+				F1668DAF22C2A9A9003E0C95 /* Localizable.stringsdict */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		F16AB86922B6851200322F18 = {
 			isa = PBXGroup;
 			children = (
+				F1B241E922C4021800F1CC74 /* Localizable.strings */,
 				F16AB87422B6851200322F18 /* eventCal */,
 				F16AB87322B6851200322F18 /* Products */,
 			);
@@ -56,9 +103,12 @@
 		F16AB87422B6851200322F18 /* eventCal */ = {
 			isa = PBXGroup;
 			children = (
+				F1668DAA22C2850D003E0C95 /* Controllers */,
+				F1668DA922C28507003E0C95 /* View */,
+				F1668DA822C284FC003E0C95 /* Model */,
+				F1668DA722C284F1003E0C95 /* Data */,
+				F1668DAB22C285AB003E0C95 /* CalInfo.stringsdict */,
 				F16AB87522B6851200322F18 /* AppDelegate.swift */,
-				F16AB87722B6851200322F18 /* ViewController.swift */,
-				F16AB87922B6851200322F18 /* Main.storyboard */,
 				F16AB87F22B6851400322F18 /* Assets.xcassets */,
 				F16AB88122B6851400322F18 /* LaunchScreen.storyboard */,
 				F16AB88422B6851400322F18 /* Info.plist */,
@@ -107,8 +157,9 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
+				"fr-CA",
 			);
 			mainGroup = F16AB86922B6851200322F18;
 			productRefGroup = F16AB87322B6851200322F18 /* Products */;
@@ -125,9 +176,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1668DAC22C285AB003E0C95 /* CalInfo.stringsdict in Resources */,
+				F1B241EB22C4021800F1CC74 /* Localizable.strings in Resources */,
+				F1668DA622C28486003E0C95 /* CalPlan.rtf in Resources */,
 				F16AB88322B6851400322F18 /* LaunchScreen.storyboard in Resources */,
 				F16AB88022B6851400322F18 /* Assets.xcassets in Resources */,
 				F16AB87B22B6851200322F18 /* Main.storyboard in Resources */,
+				F1668DB122C2A9A9003E0C95 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,10 +202,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F1668DAF22C2A9A9003E0C95 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1668DB022C2A9A9003E0C95 /* en */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
 		F16AB87922B6851200322F18 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F16AB87A22B6851200322F18 /* Base */,
+				F1668DAD22C2A661003E0C95 /* en */,
+				F161990122C3F49C00BF641B /* fr-CA */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,8 +224,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				F16AB88222B6851400322F18 /* Base */,
+				F1668DAE22C2A661003E0C95 /* en */,
+				F161990222C3F49C00BF641B /* fr-CA */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F1B241E922C4021800F1CC74 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1B241EA22C4021800F1CC74 /* Base */,
+				F1B241EC22C4022900F1CC74 /* fr-CA */,
+				F1B241ED22C4022B00F1CC74 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -170,6 +247,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -231,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -287,13 +366,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W238KMYFQL;
+				DEVELOPMENT_TEAM = HS3EFL98H4;
 				INFOPLIST_FILE = eventCal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fitfi.eventCal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineapple.Calender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,13 +384,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W238KMYFQL;
+				DEVELOPMENT_TEAM = HS3EFL98H4;
 				INFOPLIST_FILE = eventCal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fitfi.eventCal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineapple.Calender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
