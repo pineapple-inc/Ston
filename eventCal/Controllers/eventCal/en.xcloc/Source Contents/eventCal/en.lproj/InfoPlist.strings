@@ -1,0 +1,4 @@
+/* Bundle name */
+"CFBundleName" = "eventCal";
+/* Privacy - Calendars Usage Description */
+"NSCalendarsUsageDescription" = "App watns to use calender information";

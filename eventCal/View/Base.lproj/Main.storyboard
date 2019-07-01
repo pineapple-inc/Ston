@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Ib Calendar Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eventCal" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,67 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UH-QL-JKs">
                                 <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7zZ-bp-FAq" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zlc-wc-jdt">
+                                            <size key="itemSize" width="58" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalenderCell" id="f62-zt-YNL" customClass="CalenderCell" customModule="eventCal" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="58" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHU-kc-dFw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="58" height="50"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyj-Uu-YzD">
+                                                                    <rect key="frame" x="8" y="14.5" width="42" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="Qyj-Uu-YzD" firstAttribute="centerX" secondItem="sHU-kc-dFw" secondAttribute="centerX" id="64W-46-wGk"/>
+                                                                <constraint firstItem="Qyj-Uu-YzD" firstAttribute="centerY" secondItem="sHU-kc-dFw" secondAttribute="centerY" id="qrH-gg-0Nu"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="sHU-kc-dFw" firstAttribute="centerY" secondItem="f62-zt-YNL" secondAttribute="centerY" id="Qmj-3P-8Db"/>
+                                                    <constraint firstItem="sHU-kc-dFw" firstAttribute="centerX" secondItem="f62-zt-YNL" secondAttribute="centerX" id="ZvV-zd-U87"/>
+                                                    <constraint firstItem="sHU-kc-dFw" firstAttribute="width" secondItem="f62-zt-YNL" secondAttribute="width" id="a9f-5O-5nj"/>
+                                                    <constraint firstItem="sHU-kc-dFw" firstAttribute="height" secondItem="f62-zt-YNL" secondAttribute="height" id="paZ-yO-4H3"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="dateLabel" destination="Qyj-Uu-YzD" id="nGO-dy-n7u"/>
+                                                    <outlet property="selectedView" destination="sHU-kc-dFw" id="6ZG-E2-wFc"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="ibCalendarDataSource" destination="BYZ-38-t0r" id="jQG-k3-Imn"/>
+                                            <outlet property="ibCalendarDelegate" destination="BYZ-38-t0r" id="naX-1e-c2p"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7zZ-bp-FAq" firstAttribute="centerX" secondItem="8UH-QL-JKs" secondAttribute="centerX" id="JUd-y1-7Co"/>
+                                    <constraint firstItem="7zZ-bp-FAq" firstAttribute="width" secondItem="8UH-QL-JKs" secondAttribute="width" id="kEs-ti-78P"/>
+                                    <constraint firstItem="7zZ-bp-FAq" firstAttribute="centerY" secondItem="8UH-QL-JKs" secondAttribute="centerY" id="tM0-Rm-CW3"/>
+                                    <constraint firstItem="7zZ-bp-FAq" firstAttribute="height" secondItem="8UH-QL-JKs" secondAttribute="height" id="wW6-5A-R0A"/>
+                                </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SiN-bn-qN8">
                                 <rect key="frame" x="0.0" y="492" width="414" height="370"/>
@@ -41,6 +101,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="calendarView" destination="7zZ-bp-FAq" id="49q-a4-Yom"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

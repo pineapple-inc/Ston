@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="eventCal/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="fr-CA">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>eventCal</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSCalendarsUsageDescription">
+        <source>App watns to use calender information</source>
+        <note>Privacy - Calendars Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="eventCal/en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="fr-CA">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="your total calender">
+        <source>your total calender</source>
+        <note>your total calenderr</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="eventCal/en.lproj/Localizable.stringsdict" datatype="plaintext" source-language="en" target-language="fr-CA">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="/your total calender:dict/NSStringLocalizedFormatKey:dict/:string">
+        <source>%#@v1_calenderCount@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="/your total calender:dict/v1_calenderCount:dict/one:dict/:string">
+        <source>you have one calender</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="/your total calender:dict/v1_calenderCount:dict/other:dict/:string">
+        <source>you have %u in your calender</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="/your total calender:dict/v1_calenderCount:dict/zero:dict/:string">
+        <source>you have noting in calender</source>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="eventCal/View/Base.lproj/Main.storyboard" source-language="en" target-language="fr-CA" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="iKK-9c-rj0.text">
+        <source>Welcome</source>
+        <note>Class = "UILabel"; text = "Welcome"; ObjectID = "iKK-9c-rj0";</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

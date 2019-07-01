@@ -10,6 +10,7 @@
 		ECFA4D4E7AFC66977FA3AAC1 /* Pods_eventCal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B292C32DAC03B74A2DD501 /* Pods_eventCal.framework */; };
 		F13446F722CA81ED00B783D6 /* eventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13446F522CA81ED00B783D6 /* eventCell.swift */; };
 		F13446F822CA81ED00B783D6 /* eventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F13446F622CA81ED00B783D6 /* eventCell.xib */; };
+		F13446FA22CA92F900B783D6 /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13446F922CA92F900B783D6 /* CalenderCell.swift */; };
 		F1668DA622C28486003E0C95 /* CalPlan.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F1668DA522C28486003E0C95 /* CalPlan.rtf */; };
 		F1668DAC22C285AB003E0C95 /* CalInfo.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F1668DAB22C285AB003E0C95 /* CalInfo.stringsdict */; };
 		F1668DB122C2A9A9003E0C95 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F1668DAF22C2A9A9003E0C95 /* Localizable.stringsdict */; };
@@ -28,6 +29,7 @@
 		87B292C32DAC03B74A2DD501 /* Pods_eventCal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eventCal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13446F522CA81ED00B783D6 /* eventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventCell.swift; sourceTree = "<group>"; };
 		F13446F622CA81ED00B783D6 /* eventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = eventCell.xib; sourceTree = "<group>"; };
+		F13446F922CA92F900B783D6 /* CalenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
 		F161990122C3F49C00BF641B /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Main.strings"; sourceTree = "<group>"; };
 		F161990222C3F49C00BF641B /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		F1668DA522C28486003E0C95 /* CalPlan.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = CalPlan.rtf; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F16AB87922B6851200322F18 /* Main.storyboard */,
+				F13446F922CA92F900B783D6 /* CalenderCell.swift */,
 				F13446F522CA81ED00B783D6 /* eventCell.swift */,
 				F13446F622CA81ED00B783D6 /* eventCell.xib */,
 			);
@@ -270,6 +273,7 @@
 			files = (
 				F13446F722CA81ED00B783D6 /* eventCell.swift in Sources */,
 				F16AB87E22B6851200322F18 /* eventCal.xcdatamodeld in Sources */,
+				F13446FA22CA92F900B783D6 /* CalenderCell.swift in Sources */,
 				F16AB87822B6851200322F18 /* ViewController.swift in Sources */,
 				F16AB87622B6851200322F18 /* AppDelegate.swift in Sources */,
 			);
