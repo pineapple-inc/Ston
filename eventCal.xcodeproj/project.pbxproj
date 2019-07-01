@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECFA4D4E7AFC66977FA3AAC1 /* Pods_eventCal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B292C32DAC03B74A2DD501 /* Pods_eventCal.framework */; };
+		F13446F722CA81ED00B783D6 /* eventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13446F522CA81ED00B783D6 /* eventCell.swift */; };
+		F13446F822CA81ED00B783D6 /* eventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F13446F622CA81ED00B783D6 /* eventCell.xib */; };
 		F1668DA622C28486003E0C95 /* CalPlan.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F1668DA522C28486003E0C95 /* CalPlan.rtf */; };
 		F1668DAC22C285AB003E0C95 /* CalInfo.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F1668DAB22C285AB003E0C95 /* CalInfo.stringsdict */; };
 		F1668DB122C2A9A9003E0C95 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F1668DAF22C2A9A9003E0C95 /* Localizable.stringsdict */; };
@@ -20,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1227832D844D7FA4975F9BC9 /* Pods-eventCal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventCal.debug.xcconfig"; path = "Target Support Files/Pods-eventCal/Pods-eventCal.debug.xcconfig"; sourceTree = "<group>"; };
+		487A3AEB2E765F3200EAE3CE /* Pods-eventCal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventCal.release.xcconfig"; path = "Target Support Files/Pods-eventCal/Pods-eventCal.release.xcconfig"; sourceTree = "<group>"; };
+		87B292C32DAC03B74A2DD501 /* Pods_eventCal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eventCal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13446F522CA81ED00B783D6 /* eventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventCell.swift; sourceTree = "<group>"; };
+		F13446F622CA81ED00B783D6 /* eventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = eventCell.xib; sourceTree = "<group>"; };
 		F161990122C3F49C00BF641B /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Main.strings"; sourceTree = "<group>"; };
 		F161990222C3F49C00BF641B /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		F1668DA522C28486003E0C95 /* CalPlan.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = CalPlan.rtf; sourceTree = "<group>"; };
@@ -45,12 +53,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFA4D4E7AFC66977FA3AAC1 /* Pods_eventCal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00F75919A8258B7C6E463182 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1227832D844D7FA4975F9BC9 /* Pods-eventCal.debug.xcconfig */,
+				487A3AEB2E765F3200EAE3CE /* Pods-eventCal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED75B15E50CB9A062D5DE461 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87B292C32DAC03B74A2DD501 /* Pods_eventCal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F1668DA722C284F1003E0C95 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				F16AB87922B6851200322F18 /* Main.storyboard */,
+				F13446F522CA81ED00B783D6 /* eventCell.swift */,
+				F13446F622CA81ED00B783D6 /* eventCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -89,6 +117,8 @@
 				F1B241E922C4021800F1CC74 /* Localizable.strings */,
 				F16AB87422B6851200322F18 /* eventCal */,
 				F16AB87322B6851200322F18 /* Products */,
+				00F75919A8258B7C6E463182 /* Pods */,
+				ED75B15E50CB9A062D5DE461 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F16AB88722B6851400322F18 /* Build configuration list for PBXNativeTarget "eventCal" */;
 			buildPhases = (
+				1E521321914AE3F05DF08E7B /* [CP] Check Pods Manifest.lock */,
 				F16AB86E22B6851200322F18 /* Sources */,
 				F16AB86F22B6851200322F18 /* Frameworks */,
 				F16AB87022B6851200322F18 /* Resources */,
+				5959A7658E5186CFD3FA402A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13446F822CA81ED00B783D6 /* eventCell.xib in Resources */,
 				F1668DAC22C285AB003E0C95 /* CalInfo.stringsdict in Resources */,
 				F1B241EB22C4021800F1CC74 /* Localizable.strings in Resources */,
 				F1668DA622C28486003E0C95 /* CalPlan.rtf in Resources */,
@@ -188,11 +221,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E521321914AE3F05DF08E7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eventCal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5959A7658E5186CFD3FA402A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eventCal/Pods-eventCal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eventCal/Pods-eventCal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eventCal/Pods-eventCal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F16AB86E22B6851200322F18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13446F722CA81ED00B783D6 /* eventCell.swift in Sources */,
 				F16AB87E22B6851200322F18 /* eventCal.xcdatamodeld in Sources */,
 				F16AB87822B6851200322F18 /* ViewController.swift in Sources */,
 				F16AB87622B6851200322F18 /* AppDelegate.swift in Sources */,
@@ -363,6 +439,7 @@
 		};
 		F16AB88822B6851400322F18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1227832D844D7FA4975F9BC9 /* Pods-eventCal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +458,7 @@
 		};
 		F16AB88922B6851400322F18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487A3AEB2E765F3200EAE3CE /* Pods-eventCal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

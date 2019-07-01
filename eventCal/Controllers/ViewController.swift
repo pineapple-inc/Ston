@@ -8,9 +8,9 @@
 
 import UIKit
 import EventKit
+import JTAppleCalendar
 class ViewController: UIViewController {
     // 1
-    @IBOutlet weak var welcomeMessageLbl: UILabel!
     let eventStore = EKEventStore()
     var calanderKeys:[String:String] = [:]
    
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         default:
             print("Case default")
         }
-        assignLocalizestring(key: "Welcome", label: welcomeMessageLbl)
+       // assignLocalizestring(key: "Welcome", label: welcomeMessageLbl)
         // Do any additional setup after loading the view.
     }
 
