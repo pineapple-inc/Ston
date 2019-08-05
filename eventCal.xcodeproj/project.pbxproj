@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		ECFA4D4E7AFC66977FA3AAC1 /* Pods_eventCal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B292C32DAC03B74A2DD501 /* Pods_eventCal.framework */; };
+		F11723DC22E25B0A00980619 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11723DB22E25B0A00980619 /* Constant.swift */; };
 		F13446F722CA81ED00B783D6 /* eventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13446F522CA81ED00B783D6 /* eventCell.swift */; };
 		F13446F822CA81ED00B783D6 /* eventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F13446F622CA81ED00B783D6 /* eventCell.xib */; };
 		F13446FA22CA92F900B783D6 /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13446F922CA92F900B783D6 /* CalenderCell.swift */; };
+		F161F27722EDF94200560907 /* EditInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F161F27622EDF94200560907 /* EditInvoiceViewController.swift */; };
 		F1668DA622C28486003E0C95 /* CalPlan.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F1668DA522C28486003E0C95 /* CalPlan.rtf */; };
 		F1668DAC22C285AB003E0C95 /* CalInfo.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F1668DAB22C285AB003E0C95 /* CalInfo.stringsdict */; };
 		F1668DB122C2A9A9003E0C95 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F1668DAF22C2A9A9003E0C95 /* Localizable.stringsdict */; };
+		F16A54D022D134F9004E2069 /* ExtraFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A54CF22D134F9004E2069 /* ExtraFunctions.swift */; };
+		F16A54D222D1379A004E2069 /* CalenderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A54D122D1379A004E2069 /* CalenderManager.swift */; };
+		F16A54D422D139D7004E2069 /* JTCalendarHapler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A54D322D139D7004E2069 /* JTCalendarHapler.swift */; };
+		F16A54D622D14245004E2069 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A54D522D14245004E2069 /* Event.swift */; };
 		F16AB87622B6851200322F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16AB87522B6851200322F18 /* AppDelegate.swift */; };
 		F16AB87822B6851200322F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16AB87722B6851200322F18 /* ViewController.swift */; };
 		F16AB87B22B6851200322F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16AB87922B6851200322F18 /* Main.storyboard */; };
@@ -27,16 +33,22 @@
 		1227832D844D7FA4975F9BC9 /* Pods-eventCal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventCal.debug.xcconfig"; path = "Target Support Files/Pods-eventCal/Pods-eventCal.debug.xcconfig"; sourceTree = "<group>"; };
 		487A3AEB2E765F3200EAE3CE /* Pods-eventCal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventCal.release.xcconfig"; path = "Target Support Files/Pods-eventCal/Pods-eventCal.release.xcconfig"; sourceTree = "<group>"; };
 		87B292C32DAC03B74A2DD501 /* Pods_eventCal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eventCal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11723DB22E25B0A00980619 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F13446F522CA81ED00B783D6 /* eventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventCell.swift; sourceTree = "<group>"; };
 		F13446F622CA81ED00B783D6 /* eventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = eventCell.xib; sourceTree = "<group>"; };
 		F13446F922CA92F900B783D6 /* CalenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
 		F161990122C3F49C00BF641B /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Main.strings"; sourceTree = "<group>"; };
 		F161990222C3F49C00BF641B /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		F161F27622EDF94200560907 /* EditInvoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInvoiceViewController.swift; sourceTree = "<group>"; };
 		F1668DA522C28486003E0C95 /* CalPlan.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = CalPlan.rtf; sourceTree = "<group>"; };
 		F1668DAB22C285AB003E0C95 /* CalInfo.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = CalInfo.stringsdict; path = Data/CalInfo.stringsdict; sourceTree = "<group>"; };
 		F1668DAD22C2A661003E0C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		F1668DAE22C2A661003E0C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F1668DB022C2A9A9003E0C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = eventCal/en.lproj/Localizable.stringsdict; sourceTree = SOURCE_ROOT; };
+		F16A54CF22D134F9004E2069 /* ExtraFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraFunctions.swift; sourceTree = "<group>"; };
+		F16A54D122D1379A004E2069 /* CalenderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderManager.swift; sourceTree = "<group>"; };
+		F16A54D322D139D7004E2069 /* JTCalendarHapler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTCalendarHapler.swift; sourceTree = "<group>"; };
+		F16A54D522D14245004E2069 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F16AB87222B6851200322F18 /* eventCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16AB87522B6851200322F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F16AB87722B6851200322F18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F1668DA522C28486003E0C95 /* CalPlan.rtf */,
+				F11723DB22E25B0A00980619 /* Constant.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -90,6 +103,7 @@
 		F1668DA822C284FC003E0C95 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F16A54D522D14245004E2069 /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,7 +123,11 @@
 			isa = PBXGroup;
 			children = (
 				F16AB87722B6851200322F18 /* ViewController.swift */,
+				F161F27622EDF94200560907 /* EditInvoiceViewController.swift */,
+				F16A54D322D139D7004E2069 /* JTCalendarHapler.swift */,
+				F16A54D122D1379A004E2069 /* CalenderManager.swift */,
 				F1668DAF22C2A9A9003E0C95 /* Localizable.stringsdict */,
+				F16A54CF22D134F9004E2069 /* ExtraFunctions.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -272,10 +290,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F13446F722CA81ED00B783D6 /* eventCell.swift in Sources */,
+				F16A54D622D14245004E2069 /* Event.swift in Sources */,
 				F16AB87E22B6851200322F18 /* eventCal.xcdatamodeld in Sources */,
+				F16A54D022D134F9004E2069 /* ExtraFunctions.swift in Sources */,
 				F13446FA22CA92F900B783D6 /* CalenderCell.swift in Sources */,
 				F16AB87822B6851200322F18 /* ViewController.swift in Sources */,
+				F161F27722EDF94200560907 /* EditInvoiceViewController.swift in Sources */,
+				F16A54D422D139D7004E2069 /* JTCalendarHapler.swift in Sources */,
+				F11723DC22E25B0A00980619 /* Constant.swift in Sources */,
 				F16AB87622B6851200322F18 /* AppDelegate.swift in Sources */,
+				F16A54D222D1379A004E2069 /* CalenderManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,16 @@
 //
 
 import UIKit
-
+import EventKit
 class eventCell: UITableViewCell {
 
+    @IBOutlet weak var EventName: UILabel!
+    @IBOutlet weak var eventTypeColor: UIView!
+    var currentEvent:EKEvent!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

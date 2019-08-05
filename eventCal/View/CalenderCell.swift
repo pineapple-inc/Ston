@@ -8,8 +8,10 @@
 
 import UIKit
 import JTAppleCalendar
+import EventKit
 class CalenderCell: JTAppleCell {
     
     @IBOutlet weak var selectedView: UIView!
     @IBOutlet weak var dateLabel: UILabel!
+    var events:[EKEvent] = []
 }

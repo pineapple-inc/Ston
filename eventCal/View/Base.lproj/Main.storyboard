@@ -103,11 +103,38 @@
                     </view>
                     <connections>
                         <outlet property="calendarView" destination="7zZ-bp-FAq" id="49q-a4-Yom"/>
+                        <outlet property="eventList" destination="SiN-bn-qN8" id="WOf-yz-9PK"/>
+                        <segue destination="Wbf-ya-Ztf" kind="show" identifier="editVC" id="QbD-pz-eoQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </scene>
+        <!--Edit Invoice View Controller-->
+        <scene sceneID="Vwb-9y-VyB">
+            <objects>
+                <viewController id="Wbf-ya-Ztf" customClass="EditInvoiceViewController" customModule="eventCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jw7-6T-bUd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVg-jO-kYy">
+                                <rect key="frame" x="169" y="433" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Invoice"/>
+                                <connections>
+                                    <action selector="getInvoice:" destination="Wbf-ya-Ztf" eventType="touchUpInside" id="STP-ev-AOq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fcL-2X-4lm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YsB-Sb-SlX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="61"/>
         </scene>
     </scenes>
 </document>

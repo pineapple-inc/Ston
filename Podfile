@@ -7,5 +7,6 @@ target 'eventCal' do
 
   # Pods for eventCal
 	pod 'JTAppleCalendar'
+	pod 'PDFGenerator', '~> 3.0'
 
 end
